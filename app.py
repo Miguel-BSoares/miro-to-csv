@@ -12,8 +12,7 @@ uploaded_file = st.file_uploader("Upload Miro CSV", type=["csv"])
 # Optional: paste CSV content manually
 csv_text = st.text_area(
     "Or paste CSV content here",
-    placeholder="col1,col2,col3
-A,B,C"
+    placeholder="col1,col2,col3\nA,B,C"
 ) 
 
 if uploaded_file or csv_text.strip():
